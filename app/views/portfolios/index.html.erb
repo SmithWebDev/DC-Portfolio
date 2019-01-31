@@ -3,8 +3,5 @@
    <p><%= pi.title %></p>
    <p><%= pi.subtitle %></p>
    <p><%= pi.body %></p>
-   <%= image_tag pi.thumb_image %>
-
-
-
+   <%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
   <% end %>
