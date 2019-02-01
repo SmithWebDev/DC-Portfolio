@@ -1,7 +1,11 @@
 <h1>Portfolio Items</h1>
-  <% @portfolio_items.each do |pi| %>
-   <p><%= pi.title %></p>
-   <p><%= pi.subtitle %></p>
-   <p><%= pi.body %></p>
-   <%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
-  <% end %>
+
+<%= link_to  "Create New Item", new_portfolio_path %>
+
+<% @portfolio_items.each do |pi| %>
+  <p><%= pi.title %></p>
+  <p><%= pi.subtitle %></p>
+  <p><%= pi.body %></p>
+  <%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
+  <%= link_to  "Edit", edit_portfolio_path %>
+<% end %>
