@@ -1,18 +1,19 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  layout("blog")  #Maps to Layouts directory, provides unique layout for Blog posts
 
   # GET /blogs
   # GET /blogs.json
   def index
     @blogs = Blog.all
-    @page_title = "My Portfolio Blog"
+    @page_title = "My Portfolio | Blog"  #Allows for dynamic page titles for index pages
   end
 
   # GET /blogs/1
   # GET /blogs/1.json
   def show
-    @page_title   = "Portfolio Site | #{@blog.title}"
-    @seo_keywords = @blog.body
+    @page_title   = "Portfolio Site | #{@blog.title}" #Dynamic page title based on the name of the Blog post
+    @seo_keywords = @blog.body #Instance variable that can allow for dynamic tags used on blog posts to be used as SEO keywords
   end
 
   # GET /blogs/new

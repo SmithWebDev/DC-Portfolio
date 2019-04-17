@@ -9,7 +9,3 @@ end
 #{height}
 #{width}
  
-"http://via.placeholder.com/250x250"
-
-"http://via.placeholder.com/600x400"
-"http://via.placeholder.com/300"
