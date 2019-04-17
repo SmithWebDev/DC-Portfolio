@@ -2,11 +2,4 @@
 
 <%= link_to  "Create New Item", new_portfolio_path %>
 
-<% @portfolio_items.each do |pi| %>
-  <p><%= link_to pi.title, portfolio_show_path(pi) %></p>
-  <p><%= pi.subtitle %></p>
-  <p><%= pi.body %></p>
-  <%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
-  <%= link_to "Edit", edit_portfolio_path(pi) %>
-  <%= link_to 'Destroy', portfolio_path(pi), method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
+<%= render partial: 'portfolio_item', collection: @portfolio_items %>     <!-- Manual Data collection requires dev to direct Rails to the portfolio and collection looking to be accessed. -->
