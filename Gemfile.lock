@@ -1,12 +1,7 @@
-GIT
-  remote: https://github.com/SmithWebDev/SmithViewTool
-  revision: c2e09b9f86c4adfdccca1efacd0a8b91282678e7
-  specs:
-    Smith_View_Tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
+    Smith_View_Tool (0.1.0)
     actioncable (5.2.3)
       actionpack (= 5.2.3)
       nio4r (~> 2.0)
@@ -106,6 +101,8 @@ GEM
     nokogiri (1.10.2)
       mini_portile2 (~> 2.4.0)
     orm_adapter (0.5.0)
+    petergate (2.0.1)
+      activerecord (> 4.0.0)
     pg (1.1.4)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -197,7 +194,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  Smith_View_Tool!
+  Smith_View_Tool
   bootsnap (>= 1.1.0)
   byebug
   coffee-rails (~> 4.2)
@@ -206,6 +203,7 @@ DEPENDENCIES
   hirb (~> 0.7.3)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  petergate (~> 2.0, >= 2.0.1)
   pg (>= 0.18, < 2.0)
   pry-byebug (~> 3.7)
   puma (~> 3.11)
