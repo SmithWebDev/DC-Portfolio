@@ -1,10 +1,11 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
   layout("blog")  #Maps to Layouts directory, provides unique layout for Blog posts
+  access all: [:show, :index], user: {except: [:destroy, :new, :create, :update, :edit]}, site_admin: :all
 
   # GET /blogs
   # GET /blogs.json
-  def index
+  def index 
     @blogs = Blog.all
     @page_title = "My Portfolio | Blog"  #Allows for dynamic page titles for index pages
   end
