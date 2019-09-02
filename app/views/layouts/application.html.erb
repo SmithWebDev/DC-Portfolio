@@ -3,7 +3,7 @@
   <head>
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta name = "keywords" content = "<%= @seo_keywords %>" />
 
@@ -12,19 +12,18 @@
   </head>
 
   <body>
-    <p class = "notice"><%= notice %></p>
-    <p class = "alert"><%= alert %></p>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <%= render "shared/application_nav"%>
+      
+      <%= login_helper %>
+      
 
-    <%= render "shared/nav", location: 'top' %>
-    
-    <%= login_helper %>
-    
+      <%= yield %>
 
-    <%= yield %>
-
-    <%= copyright_generator %>
-    
-    <%= source_helper("application") %>
+      <%= copyright_generator %>
+      
+      <%= source_helper("application") %>
+    </div>
     
     
   </body>
