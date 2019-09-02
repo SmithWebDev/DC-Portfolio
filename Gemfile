@@ -19,6 +19,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'hirb', '~> 0.7.3'
 gem 'Smith_View_Tool'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+gem 'jquery-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
