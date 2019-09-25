@@ -1,5 +1,5 @@
 module ApplicationHelper
-  def login_helper style  #Creation of Ruby Method for ease of use, DRY, and scalability
+  def login_helper style = " "  #Creation of Ruby Method for ease of use, DRY, and scalability
     if current_user.is_a?(GuestUser)
       (link_to  "Register", new_user_registration_path, class: style) + " ".html_safe +
       (link_to  "Login",    new_user_session_path, class: style)
