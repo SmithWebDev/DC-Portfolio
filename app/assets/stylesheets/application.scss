@@ -177,28 +177,28 @@ body {
 /*
 * Custom Styles
 */
+.container {
+  padding: 15px;
+}
 
-.card-block{
+.card-block {
   color: #000000;
   text-align: left;
 }
 
-.auth-links a{
+.auth-links a {
   color: #000000;
 }
 
-.register-text{
+.register-text {
   text-align: right;
 }
 
 
 
-.login > .card{
+.login>.card {
   width: 22rem;
   margin: 0 auto;
   float: none;
   margin-bottom: 10px;
-}
-.login .container{
-  padding: 15px;
 }
