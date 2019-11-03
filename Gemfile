@@ -67,3 +67,4 @@ gem 'jquery-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem "nokogiri", ">= 1.10.4"
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
